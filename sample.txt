@@ -1,0 +1,53 @@
+1) App component -> functionalities
+
+2) Navbar -> is constant across pages
+
+3) search -> input field -> search button -> data has to be fetched -> clear button need to be appear
+
+4) users -> all the list of users
+
+5) userItem -> individual users
+
+6) userDetail -> get the details of that userDetail
+
+7) repoList -> list all the repos
+
+8) repoItem -> individual repos
+
+9) alertComponent -> simple component related to the search component
+
+
+
+Packages we use: 
+
+1) npm install react router dom(client side router)
+
+2) npm install axios(data fetching library) 
+
+
+data fetching from:
+
+https://api.github.com/users -> Public API for getting public github users data.
+                                Github is giving it for free
+
+API - Application Programming interface -> JSON data from the browser
+
+
+we are not searching for individual users
+
+React app ---> https://api.github.com/users ---> 30 random github users data
+use axios to do the above process
+
+
+search API -https://api.github.com/search/users?q=harsh  ---> to get the specific user in the input field
+
+https://api.github.com/search/users?q=text
+
+
+
+in initial load -> clear button false ->true when get user -> click clear button -> users should be empty
+
+More button -> 3000/users/username -> https://api.github.com/users/DHarsh10 -> we have to display
+
+
+https://api.github.com/users/DHarsh10/repos?per_page=5&sort=asc  ->fetch 5 repos
